@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Using Selectors</title>
+        <!--descendant selector example-->
+        <!--attribute as selectors-->
+        <style>
+            ul li{
+                color: blue;
+            }
+
+            a[href="https://www.amazon.com/"] {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <ol>
+            <li>foo</li>
+            <li>bar</li>
+                <!--descendant selector example-->
+                <ul>
+                    <li>hello</li>
+                    <li>bye</li>
+                    <li>ok</li>
+                </ul>
+            <li>baz</li>
+            <li><a href="https://www.google.com/">Google</a></li>
+            <li><a href="https://www.amazon.com/">Amazon</a> </li>
+            <li><a href="https://www.facebook.com/">Facebook</a></li>
+        </ol>
+
+    </body>
+</html>
